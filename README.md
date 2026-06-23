@@ -1,17 +1,39 @@
-# React + Vite
+# Cycloidal Gear Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A web-based parametric 3D modeling tool designed for generating perfectly mathematically calculated cycloidal gears and outer rings. This application is built with React and Three.js, tailored specifically for 3D printing enthusiasts, robotics developers, and mechanical engineers.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Parametric 3D Generation**: Instantly generate cycloidal drives by tweaking mathematical parameters (Pins, Radius, Eccentricity, Tolerances).
+- **Live 3D Visualization**: See a real-time, interactive 3D preview of your gear assembly directly in the browser.
+- **Dynamic Tolerances**: Artificially adjusts the cycloidal disc profile mathematically to create perfect mechanical clearances for 3D printing.
+- **Multi-Disc Balancing**: Stack up to 4 cycloidal discs. The app automatically offsets the eccentric phases and perfectly aligns the output holes for a single solid output shaft.
+- **Instant STL Export**: Export your generated discs and outer ring individually as `.stl` files, or download the entire assembly as a single `.zip` file for immediate slicing and 3D printing.
 
-## React Compiler
+## Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React.js** & **Vite**: For a lightning-fast, reactive user interface.
+- **Three.js**: To compute and render 3D geometries and parametric extrusions.
+- **JSZip**: To package generated `.stl` files on the client side.
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# Cycloidal_Gear_Generator
+To run this application locally on your machine:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/YigitSalihEmecen/Cycloidal_Gear_Generator.git
+   cd Cycloidal_Gear_Generator
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to the local server URL (usually `http://localhost:5173`).
